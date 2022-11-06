@@ -32,7 +32,7 @@
     float: right;
     padding-bottom: 24px;
     padding-right: 16px;
-    width: 200px;
+    width: 150px;
 }
 
 .item-a {
@@ -43,14 +43,14 @@
     grid-area: project;
 }
 .item-c {
-    grid-area: skills;
+    grid-area: recent;
     text-align: center;
 }
 .item-d {
     grid-area: extra;
 }
 
-.item-a:hover, .item-b:hover{
+.item-a:hover, .item-b:hover, .item-c:hover{
     transform: scale(1.03);
     z-index: 2;
     cursor: pointer;
@@ -64,8 +64,8 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas:
-    "about about . skills"
-    "project project . skills"
+    "about about . recent"
+    "project project . recent"
     "extra extra extra extra";
 }
 
@@ -81,7 +81,7 @@
 @media screen and (max-width: 980px){
     .container{
         grid-template-areas:
-    "skills skills skills skills"
+    "recent recent recent recent"
     "about about about about"
     "project project project project";
     }
@@ -89,8 +89,7 @@
     .item-a{
         margin-top: 50px;
     }
-}
-
-div{
-   border: 1px solid crimson;
+    .item-c{
+        text-align: left;
+    }
 }
