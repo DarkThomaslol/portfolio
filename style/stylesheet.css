@@ -1,0 +1,69 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+body{
+    width: 100%;
+    background-color: #1B1C31;
+    background: linear-gradient(#1B1E78 0%, #1B1C31 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1B1E78),color-stop(1, #1B1C31));
+    background-attachment: fixed;
+}
+p, input{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img {
+    max-width: 100%
+}
+article{
+    margin-left: 55px;
+}
+ul{
+    list-style-type: "- ";
+}
+
+nav{
+    height: 100%;
+    float: left;
+    background-color: #202138;
+    transition: 0.5s;
+    padding-top: 100px;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 55px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+nav .btnSidebar{
+    background-color: #202138;
+    color: #5FDFDF;
+    font-size: 50px;
+    float: left;
+    border: 0px solid;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    display: block;
+    transition: 0.5s;
+    white-space: nowrap;
+}
+nav .btnSidebar:hover{
+    background-color: #2F304A;
+    cursor: pointer;
+}
+nav .closeSidebar{
+    position: absolute;
+    top: 0;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 14px;
+    width: auto;
+}
+.btnSidebar .textSidebar{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.btnSidebarHome{
+    padding-left: 8px;
+}

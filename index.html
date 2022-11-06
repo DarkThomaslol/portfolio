@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>thing</title>
+
+        <script src="js/main.js"></script>
+        <script src="js/home.js"></script>
+
+        <link rel="stylesheet" href="style/stylesheet.css"/>
+        <link rel="stylesheet" href="style/home.css"/>
+    </head>
+    <body onload="start()">
+        <nav id="sidebar">
+            <input id="sidebarChanger" class="btnSidebar closeSidebar" type="button" value="&#9776;" onclick="sidebarChange()">
+            <button id="sidebarHome" class="btnSidebar btnSidebarHome" onclick="">&#9751; <span class="textSidebar">Home</span></button>
+            <button class="btnSidebar" onclick="">&#10070; <span class="textSidebar">About me</span></button>
+            <button class="btnSidebar" onclick="">&#9874; <span class="textSidebar">Projects</span></button>
+        </nav>
+
+        <article>
+            <header>
+                <p class="title">Portfolio</p>
+                <p class="titleText">Thomas Marselje</p>
+            </header>
+
+            <div class="container">
+                <a class="item-a itemStyle imgHelper">
+                    <p class="itemText">
+                        <img class="itemImg" src="images/template/655deed8c2c5dc92954663d7bc11c270.png" alt="...">
+                        <span class="itemTitle">about me</span>
+                        <br>
+                        Studies, skills and what I like to learn/do as a developer
+                    </p>
+                </a>
+                <a class="item-b itemStyle" onclick="">
+                    <p class="itemText">
+                        <img class="itemImg" src="images/template/Bongo-Cat-png-3.png" alt="...">
+                        <span class="itemTitle">Projects</span>
+                        <br>
+                        Programs, website and other projects I made
+                    </p>
+                </a>
+                <div class="item-c itemStyle">
+                    <p class="itemText itemTitle">Recent project</p>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>

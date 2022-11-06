@@ -1,0 +1,96 @@
+.title{
+    color: #5FDFDF;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.titleText{
+    margin-top: -50px;
+    color: #5FDFDF;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.itemStyle{
+    background-color: rgb(41, 47, 94);
+    box-shadow: 0px 4px 8px 0px #000000;
+    border-radius: 5px;
+    text-align: left;
+    transition: 0.5s;
+}
+.itemStyle .itemTitle{
+    font-weight: bold;
+    font-size: 25px;
+}
+.itemStyle .itemText{
+    color: #5FDFDF;
+    padding: 8px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.itemStyle .itemImg{
+    float: right;
+    padding-bottom: 24px;
+    padding-right: 16px;
+    width: 100px;
+}
+
+.item-a {
+    grid-area: about;
+}
+.item-b {
+    margin-top: 50px;
+    grid-area: project;
+}
+.item-c {
+    grid-area: skills;
+    text-align: center;
+}
+.item-d {
+    grid-area: extra;
+}
+
+.item-a:hover, .item-b:hover{
+    transform: scale(1.03);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "about about . skills"
+    "project project . skills"
+    "extra extra extra extra";
+}
+
+@media screen and (max-width: 1400px){
+    .title{
+        font-size: 70px;
+    }
+    .titleText{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .container{
+        grid-template-areas:
+    "skills skills skills skills"
+    "about about about about"
+    "project project project project";
+    }
+
+    .item-a{
+        margin-top: 50px;
+    }
+}
+
+div{
+   border: 1px solid crimson;
+}
