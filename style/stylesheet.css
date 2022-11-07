@@ -12,7 +12,9 @@ body{
 p, input{
     font-family: Arial;
 }
-
+header{
+    margin: 0;
+}
 article{
     margin-left: 55px;
 }
