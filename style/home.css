@@ -1,11 +1,11 @@
 .title{
+    margin: 0;
     color: #5FDFDF;
     text-align: center;
     font-size: 5vw;
     font-weight: bold;
 }
 .titleText{
-    margin-top: -50px;
     color: #5FDFDF;
     text-align: center;
     font-size: 2vw;

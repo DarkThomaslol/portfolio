@@ -12,9 +12,7 @@ body{
 p, input{
     font-family: Arial;
 }
-img {
-    max-width: 100%
-}
+
 article{
     margin-left: 55px;
 }

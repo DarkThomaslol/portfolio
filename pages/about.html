@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>portfolio about</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>portfolio about</title>
 
-    <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/about.js"></script>
 
-    <link rel="stylesheet" href="style/stylesheet.css"/>
-    <link rel="stylesheet" href="style/about.css"/>
-</head>
-<body>
+        <link rel="stylesheet" href="../style/stylesheet.css"/>
+        <link rel="stylesheet" href="../style/about.css"/>
+    </head>
+    <body onload="start()">
+        <nav id="sidebar">
+            <button class="btnSidebar closeSidebar" onclick="sidebarChange()"><img id="sidebarChangerImg" class="imgSidebar" src="../images/main/icons/bars-solid.png" alt="..."></button>
+            <button id="sidebarHome" class="btnSidebar" onclick="location.href='../index.html'"><img class="imgSidebar" src="../images/main/icons/house-solid.png" alt="..."> <span class="textSidebar">Home</span></button>
+            <button id="sidebarAbout" class="btnSidebar" onclick="location.href='about.html'"><img class="imgSidebar" src="../images/main/icons/address-card-solid.png" alt="..."> <span class="textSidebar">About me</span></button>
+            <button id="sidebarProject" class="btnSidebar" onclick="location.href='project.html'"><img class="imgSidebar" src="../images/main/icons/folder-solid.png" alt="..."> <span class="textSidebar">Projects</span></button>
+        </nav>
 
-</body>
+        <article>
+            <header>
+                <p class="title">Thomas Marselje</p>
+            </header>
+
+            <div>
+
+            </div>
+        </article>
+    </body>
 </html>
