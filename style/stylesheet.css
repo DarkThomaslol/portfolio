@@ -10,7 +10,7 @@ body{
     background-attachment: fixed;
 }
 p, input{
-    font-family: CustomFont;
+    font-family: Arial;
 }
 img {
     max-width: 100%
@@ -20,14 +20,6 @@ article{
 }
 ul{
     list-style-type: "- ";
-}
-
-@font-face {
-    font-family: "CustomFont";
-    src: url("../font/Segoe UI.woff") format("woff");
-    url("../font/Segoe UI Bold.woff") format("woff"),
-    url("../font/Segoe UI Bold Italic.woff") format("woff"),
-    url("../font/Segoe UI Italic.woff") format("woff");
 }
 
 nav{
