@@ -52,7 +52,6 @@
 
 .item-a:hover, .item-b:hover, .item-c:hover{
     transform: scale(1.03);
-    z-index: 2;
     cursor: pointer;
 }
 
