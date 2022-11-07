@@ -34,19 +34,19 @@ nav{
     position: fixed;
     left: 0;
     top: 0;
+    box-shadow: 0px 0px 8px 0px #000000;
 }
 nav .btnSidebar{
     background-color: #202138;
     color: #5FDFDF;
-    font-size: 50px;
     float: left;
     border: 0px solid;
-    text-decoration: none;
     width: 100%;
-    text-align: left;
-    display: block;
     transition: 0.5s;
     white-space: nowrap;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 14px;
 }
 nav .btnSidebar:hover{
     background-color: #2F304A;
@@ -56,14 +56,14 @@ nav .closeSidebar{
     position: absolute;
     top: 0;
     text-align: left;
-    padding-left: 5px;
-    padding-right: 14px;
-    width: auto;
+    width: 65px;
 }
 .btnSidebar .textSidebar{
     font-size: 20px;
     padding-left: 10px;
+    text-align: left;
+    text-decoration: none;
 }
-.btnSidebarHome{
-    padding-left: 8px;
+.btnSidebar .imgSidebar{
+    width: 43px;
 }
