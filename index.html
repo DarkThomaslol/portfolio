@@ -4,13 +4,19 @@
         <meta charset="UTF-8">
         <title>portfolio home</title>
 
+        <!-- Main js -->
         <script src="js/main.js"></script>
+        <!-- Local js -->
         <script src="js/home.js"></script>
 
+        <!-- Main css -->
         <link rel="stylesheet" href="style/stylesheet.css"/>
+        <!-- Local css -->
         <link rel="stylesheet" href="style/home.css"/>
     </head>
     <body onload="start()">
+
+        <!-- Sidebar that links to other pages -->
         <nav id="sidebar">
             <button class="btnSidebar closeSidebar" onclick="sidebarChange()"><img id="sidebarChangerImg" class="imgSidebar" src="images/main/icons/bars-solid.png" alt="..."></button>
             <button id="sidebarHome" class="btnSidebar" onclick="location.href='index.html'"><img class="imgSidebar" src="images/main/icons/house-solid.png" alt="..."> <span class="textSidebar">Home</span></button>
@@ -18,32 +24,52 @@
             <button id="sidebarProject" class="btnSidebar" onclick="location.href='pages/project.html'"><img class="imgSidebar" src="images/main/icons/folder-solid.png" alt="..."> <span class="textSidebar">Projects</span></button>
         </nav>
 
+        <!-- Content -->
         <article>
+
+            <!-- Title-->
             <header>
                 <p class="title">Welcome</p>
-                <p class="titleText">I'm Thomas Marselje, this is my website</p>
+                <p class="titleText">I'm Thomas Marselje and this is my website</p>
             </header>
 
+            <!-- Container with different items -->
             <div class="container">
+
+                <!-- About me item -->
                 <a class="item-a itemStyle imgHelper" onclick="location.href='pages/about.html'">
-                    <p class="itemText">
+                    <p class="itemTitle">
                         <img class="itemImg" src="images/template/655deed8c2c5dc92954663d7bc11c270.png" alt="...">
-                        <span class="itemTitle">about me</span>
+                        about me
                     </p>
-                    <p class="itemText">Studies, skills and what I like to learn/do as a developer</p>
+                    <p class="itemText">
+                        I'm a student at Sintlucas studying software development.
+                        I like to develop websites, games and other programs as long as I learn something from it or if it's useful for me later on (and if its fun of course).
+                        My goal is to eventually work as a game developer but im open for other suggestions.
+                    </p>
+                    <p class="itemText">Want to read more <span class="itemBold">click</span> this!</p>
                 </a>
+
+                <!-- Projects item -->
                 <a class="item-b itemStyle" onclick="location.href='pages/project.html'">
-                    <p class="itemText">
+                    <p class="itemTitle">
                         <img class="itemImg" src="images/template/Bongo-Cat-png-3.png" alt="...">
-                        <span class="itemTitle">Projects</span>
+                        Projects
                     </p>
-                    <p class="itemText">Programs, website and other projects I made</p>
-                </a>
-                <a class="item-c itemStyle">
                     <p class="itemText">
-                        <span class="itemTitle">Recent project</span>
-                        <br>
-                        sdashdsadasdasd
+                        I will show you the work that I as a developer made either at school or at home.
+                        This will also include testing mechanics and small/unfinished projects.
+                    </p>
+                    <p class="itemText">Want to read more <span class="itemBold">click</span> this!</p>
+                </a>
+
+                <!-- Recent project item -->
+                <a class="item-c itemStyle">
+                    <p class="itemTitle itemBold">
+                        Recent finished project
+                    </p>
+                    <p class="itemText">
+                        iuergfhgiorgoer
                     </p>
                 </a>
             </div>

@@ -1,16 +1,21 @@
+/* Title */
 .title{
     margin: 0;
     color: #5FDFDF;
     text-align: center;
     font-size: 5vw;
     font-weight: bold;
+    padding-top: 50px;
 }
+/* Text under the title */
 .titleText{
     color: #5FDFDF;
     text-align: center;
     font-size: 2vw;
+    padding-bottom: 50px;
 }
 
+/* Styles of the items */
 .itemStyle{
     background-color: rgb(41, 47, 94);
     box-shadow: 0px 4px 8px 0px #000000;
@@ -18,23 +23,34 @@
     text-align: left;
     transition: 0.5s;
 }
+/* Title in the items */
 .itemStyle .itemTitle{
-    font-weight: bold;
     font-size: 25px;
+    color: #5FDFDF;
+    padding: 8px;
+    word-wrap: break-word;
+    font-weight: bold;
 }
+/* Text in the items */
 .itemStyle .itemText{
     color: #5FDFDF;
     padding: 8px;
     font-size: 20px;
     word-wrap: break-word;
 }
+/* Makes some separate word bold in items  */
+.itemStyle .itemBold{
+    font-weight: bold;
+}
 .itemStyle .itemImg{
     float: right;
     padding-bottom: 24px;
     padding-right: 16px;
+    padding-left: 16px;
     width: 150px;
 }
 
+/* The different items */
 .item-a {
     grid-area: about;
 }
@@ -50,11 +66,13 @@
     grid-area: extra;
 }
 
+/* When hovering over the items */
 .item-a:hover, .item-b:hover, .item-c:hover{
     transform: scale(1.03);
     cursor: pointer;
 }
 
+/* Items container */
 .container {
     position: relative;
     padding-left: 30px;
@@ -66,8 +84,10 @@
     "about about . recent"
     "project project . recent"
     "extra extra extra extra";
+    padding-bottom: 50px;
 }
 
+/* When screen size is 1400px */
 @media screen and (max-width: 1400px){
     .title{
         font-size: 70px;
@@ -76,7 +96,7 @@
         font-size: 28px;
     }
 }
-
+/* When screen size is 980px */
 @media screen and (max-width: 980px){
     .container{
         grid-template-areas:
