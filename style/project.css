@@ -1,0 +1,74 @@
+/* Title */
+.title{
+    margin: 0;
+    color: #5FDFDF;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Styles of the items */
+.itemStyle{
+    background-color: rgb(41, 47, 94);
+    box-shadow: 0px 4px 8px 0px #000000;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: center;
+}
+/* Title in the items */
+.itemStyle .itemTitle{
+    font-size: 25px;
+    color: #5FDFDF;
+    padding: 8px;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+/* Text in the items */
+.itemStyle .itemText{
+    color: #5FDFDF;
+    padding: 8px;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+/* Makes some separate word bold in items  */
+.itemStyle .itemBold{
+    font-weight: bold;
+}
+.itemStyle .itemImg{
+    float: right;
+    padding-bottom: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 150px;
+}
+
+/* The different items */
+.item-a {
+    grid-area: search;
+}
+.item-b {
+    grid-area: project;
+    margin-left: 50px;
+}
+.item-c {
+    grid-area: recent;
+    margin-bottom: 50px;
+}
+
+/* Items container */
+.container {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "recent recent recent recent"
+    "search project project project"
+    "search project project project";
+}
+
