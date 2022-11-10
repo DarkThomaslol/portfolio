@@ -16,10 +16,11 @@
     border-radius: 5px;
     transition: 0.5s;
     text-align: center;
+    padding: 20px;
 }
 /* Title in the items */
 .itemStyle .itemTitle{
-    font-size: 25px;
+    font-size: 30px;
     color: #5FDFDF;
     padding: 8px;
     word-wrap: break-word;
@@ -44,13 +45,17 @@
     width: 150px;
 }
 
+.text-left{
+    text-align: left;
+}
+
 /* The different items */
 .item-a {
     grid-area: search;
 }
 .item-b {
     grid-area: project;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 .item-c {
     grid-area: recent;
@@ -72,3 +77,26 @@
     "search project project project";
 }
 
+.searchInput{
+    border-radius: 5px;
+    font-size: 20px;
+    width: 97%;
+    margin-bottom: 10px;
+}
+.searchItems{
+    border: 1px solid rgb(53, 63, 124);
+    margin-top: -1px;
+    background-color: #202138;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #5FDFDF;
+    display: list-item;
+}
+.searchItems:hover{
+    background-color: #2F304A;
+}
+.item-a .scroll{
+    max-height: 350px;
+    overflow-y: scroll;
+}
