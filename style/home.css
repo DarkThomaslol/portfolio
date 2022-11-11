@@ -27,14 +27,14 @@
 .itemStyle .itemTitle{
     font-size: 25px;
     color: #5FDFDF;
-    padding: 8px;
+    padding: 10px;
     word-wrap: break-word;
     font-weight: bold;
 }
 /* Text in the items */
 .itemStyle .itemText{
     color: #5FDFDF;
-    padding: 8px;
+    padding: 10px;
     font-size: 20px;
     word-wrap: break-word;
 }
@@ -60,14 +60,14 @@
 }
 .item-c {
     grid-area: recent;
-    text-align: center;
+    margin-left: 50px;
 }
 .item-d {
     grid-area: extra;
 }
 
 /* When hovering over the items */
-.item-a:hover, .item-b:hover, .item-c:hover{
+.item-a:hover, .item-b:hover{
     transform: scale(1.03);
     cursor: pointer;
 }
@@ -81,8 +81,8 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas:
-    "about about . recent"
-    "project project . recent"
+    "about about recent recent"
+    "project project recent recent"
     "extra extra extra extra";
     padding-bottom: 50px;
 }
@@ -110,5 +110,6 @@
     }
     .item-c{
         text-align: left;
+        margin-left: 0;
     }
 }
