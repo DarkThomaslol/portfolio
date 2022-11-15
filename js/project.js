@@ -2,7 +2,7 @@ function start(){
     document.getElementById("sidebarProject").style.backgroundColor = "#50527d";
     indexPage = false;
     const project = projectG();
-    recent(project.title, project.text);
+    recent(project.title, project.text, project.img);
     randomProject();
 }
 
@@ -47,9 +47,10 @@ function randomProject(){
     }
 }
 
-function recent(title, text){
+function recent(title, text, img){
     document.getElementById("titleRecent").innerHTML = title;
     document.getElementById("textRecent").innerHTML = text;
+    document.getElementById("imgRecent").src = img;
 }
 
 function change(title, text, img){
@@ -61,9 +62,9 @@ function change(title, text, img){
 function projectG(){
     const title = document.getElementById("projectG").innerHTML;
     const text = "text";
-    const img = "";
+    const img = "../images/template/Bongo-Cat-png-3.png";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 
 function projectF(){
@@ -71,7 +72,7 @@ function projectF(){
     const text = "text";
     const img = "";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 
 function projectE(){
@@ -79,7 +80,7 @@ function projectE(){
     const text = "text le le la";
     const img = "";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 
 function projectD(){
@@ -87,7 +88,7 @@ function projectD(){
     const text = "text le le la";
     const img = "";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 
 function projectC(){
@@ -95,7 +96,7 @@ function projectC(){
     const text = "text le le la";
     const img = "";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 
 function projectB(){
@@ -103,7 +104,7 @@ function projectB(){
     const text = "text le le la";
     const img = "";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 
 function projectA(){
@@ -111,6 +112,6 @@ function projectA(){
     const text = "text le le la";
     const img = "";
     change(title, text, img);
-    return {title, text};
+    return {title, text, img};
 }
 

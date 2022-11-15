@@ -42,11 +42,16 @@
     padding-bottom: 24px;
     padding-right: 16px;
     padding-left: 16px;
-    width: 200px;
+    width: 30%;
 }
 
 .text-left{
     text-align: left;
+}
+
+.textDiv{
+    float: left;
+    width: 65%;
 }
 
 /* The different items */
