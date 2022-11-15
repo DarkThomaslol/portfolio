@@ -42,7 +42,7 @@
     padding-bottom: 24px;
     padding-right: 16px;
     padding-left: 16px;
-    width: 150px;
+    width: 200px;
 }
 
 .text-left{
@@ -56,6 +56,7 @@
 .item-b {
     grid-area: project;
     margin-left: 20px;
+    min-height: 500px;
 }
 .item-c {
     grid-area: recent;
@@ -97,6 +98,5 @@
     background-color: #2F304A;
 }
 .item-a .scroll{
-    max-height: 350px;
     overflow-y: scroll;
 }
