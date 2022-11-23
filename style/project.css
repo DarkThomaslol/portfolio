@@ -39,9 +39,7 @@
 }
 .itemStyle .itemImg{
     float: right;
-    padding-bottom: 24px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 20px;
     width: 30%;
 }
 
@@ -51,12 +49,13 @@
 
 .textDiv{
     float: left;
-    width: 65%;
+    width: 55%;
 }
 
 /* The different items */
 .item-a {
     grid-area: search;
+    height: 500px;
 }
 .item-b {
     grid-area: project;
